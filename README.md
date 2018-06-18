@@ -3,6 +3,8 @@ Quickly create a VPN anywhere in the world using EC2 Spot Instances.
 Inspired by an article from [Larry Gadea](https://lg.io/2015/07/05/revised-and-much-faster-run-your-own-highend-cloud-gaming-service-on-ec2.html).
 The VPN used here is a Docker image made by [Kyle Manna](https://github.com/kylemanna/docker-openvpn).
 
+This is obviously not secure (certs generated without a passphrase) and meant to be used as a proof of concept only.
+
 ## Prerequisites
 
 * AWS CLI tool already configured (use `aws configure`). Make sure to select the region you want your vpn to be in.
