@@ -10,3 +10,6 @@ This is obviously not secure (certs generated without a passphrase) and meant to
 * AWS CLI tool already configured (use `aws configure`). Make sure to select the region you want your vpn to be in.
 * An Amazon Linux AMI image with Docker installed (make your own and put the AMI id in the vpn-up.sh script)
 * A security group with ports 22 (TCP), 1194 (UDP) and a custom ICMP rule (Echo request) to allow ping requests. You might also like to open the port 443 (TCP) if you want this vpn to work over 443 for obfuscation reasons. Add the security group id in the vpn-up.sh script.
+
+## Costs 
+At today's prices in the EU Ireland region, this VPN will cost you $0.0038 per hour, and $0.09 per GB out.
