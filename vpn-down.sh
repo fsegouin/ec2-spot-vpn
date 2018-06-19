@@ -11,7 +11,7 @@ fi
 INSTANCE_ID=$( echo "$INSTANCES" | jq --raw-output '.Reservations[0].Instances[0].InstanceId' )
 echo "$INSTANCE_ID"
 
-# Now that an image has been created terminate the instance
+# Terminate the instance
 echo "Terminating instance..."
 aws ec2 terminate-instances --instance-ids "$INSTANCE_ID" > /dev/null
 
